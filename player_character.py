@@ -21,8 +21,8 @@ class player_Character:
         self.inventory.remove(item)
         print(f"{self.name} dropped {item.name}.")
     
-    def talk(self, other_character):
-        ask = input(f"Do you want to talk to {other_character.name}? (y/n): ")
+    def talk(self, game_character):
+        ask = input(f"Do you want to talk to {game_character.name}? (y/n): ")
         if ask == "y":
-            print(f"{self.name} says: Hello, {other_character.name}!")
+            print(f"{self.name} says: Hello, {game_character.name}!")
         
